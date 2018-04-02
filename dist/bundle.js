@@ -69,7 +69,51 @@
 
 /// <reference path="../../node_modules/@types/node/index.d.ts" />
 var style = __webpack_require__(1);
-console.log('hello');
+var $ = function (selector) {
+    var $elems;
+    if (typeof selector === "string") {
+        $elems = Array.prototype.slice.call(document.querySelectorAll(selector));
+    }
+    else if (selector instanceof Element) {
+        $elems = [selector];
+    }
+    else {
+        $elems = selector;
+    }
+    return {
+        get: function (index) {
+            return $elems[index];
+        },
+        on: function (event, callback) {
+            $elems.forEach(function ($elem) {
+                $elem.addEventListener(event, callback);
+            });
+        },
+        scrollTo: function () {
+            var target = $elems[0].offsetTop - 50;
+            window.scrollTo({
+                behavior: "smooth",
+                left: 0,
+                top: target,
+            });
+        }
+    };
+};
+/*****************************************************************************/
+var $headerNavLinks = $("header nav a");
+$headerNavLinks.on("click", function (ev) {
+    ev.preventDefault();
+    var target = ev.currentTarget.getAttribute("href");
+    var $target = $(target);
+    $(target).scrollTo();
+});
+var $radioButtons = $("form .radio-button");
+$radioButtons.on("keypress", function (ev) {
+    if (ev.keyCode === 13) {
+        var $input = ev.currentTarget.querySelector("input");
+        $input.dispatchEvent(new MouseEvent("click"));
+    }
+});
 
 
 /***/ }),
