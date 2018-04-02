@@ -14,6 +14,7 @@ main #work {
         }
 
         .image {
+            border: 1px solid #ebebeb;
             flex: 0 0 auto;
             overflow: hidden;
             width: 350px;
@@ -84,9 +85,9 @@ main #work {
                     border-radius: 2px;
                     color: #fff;
                     display: inline-block;
-                    font-size: 0.7em;
+                    font-family: $font-boogaloo;
+                    font-size: 0.8em;
                     padding: 4px 6px;
-                    text-shadow: 0px 0px 7px #7c7c7c;
 
                     & + span {
                         margin-left: 5px;
