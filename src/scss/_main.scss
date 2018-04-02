@@ -1,0 +1,14 @@
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: calc(100% - 50px);
+
+    section {
+        margin-bottom: 40px;
+        padding: 40px;
+    }
+}
+
+main #contact {
+    background: #fff;
+}
