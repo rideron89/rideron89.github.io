@@ -89,6 +89,13 @@ var $ = function (selector) {
                 $elem.addEventListener(event, callback);
             });
         },
+        find: function (selector) {
+            var $foundElems = [];
+            $elems.map(function ($elem) {
+                $foundElems.push($elem.querySelector(selector));
+            });
+            return $foundElems[0];
+        },
         scrollTo: function () {
             var target = $elems[0].offsetTop - 50;
             window.scrollTo({
