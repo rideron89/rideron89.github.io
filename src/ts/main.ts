@@ -5,7 +5,6 @@ const style = require("../scss/app.scss");
 const $ = function (selector) {
     let $elems: Element[];
 
-
     if (typeof selector === "string") {
         $elems = Array.prototype.slice.call(document.querySelectorAll(selector));
     } else if (selector instanceof Element) {
@@ -25,13 +24,23 @@ const $ = function (selector) {
             });
         },
 
+        find: (selector): Element => {
+            let $foundElems: Element[] = [];
+
+            $elems.map($elem => {
+                $foundElems.push($elem.querySelector(selector));
+            });
+
+            return $foundElems[0];
+        },
+
         scrollTo: () => {
             const target = (<HTMLElement>$elems[0]).offsetTop - 50;
 
             window.scrollTo({
-                    behavior: "smooth",
-                    left: 0,
-                    top: target,
+                behavior: "smooth",
+                left: 0,
+                top: target,
             });
         }
     };

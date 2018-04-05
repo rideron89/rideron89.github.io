@@ -124,15 +124,15 @@
 
                 <p>I am currently taking on new part-time jobs. If you feel like my expertise could help your web development needs, I would love to hear from you.</p>
 
-                <form action="https://formspree.io/rideron89@gmail.com" method="post">
+                <form action="https://formspree.io/rideron89@gmail.com" id="contact-form" method="post">
                     <fieldset>
                         <label for="name">Name</label>
-                        <input id ="name" name="name" tabindex="1" type="text" />
+                        <input id ="name" name="name" required tabindex="1" type="text" />
                     </fieldset>
 
                     <fieldset>
                         <label for="email">Email</label>
-                        <input id="email" name="email" tabindex="2" type="email" />
+                        <input id="email" name="email" required tabindex="2" type="email" />
                     </fieldset>
 
                     <fieldset>
@@ -151,7 +151,7 @@
                         &nbsp;/&nbsp;
                         <label>
                             <span class="radio-button">
-                                <input name="schedule" tabindex="5" type="radio" value="full-time" />
+                                <input id="full-time" name="schedule" tabindex="5" type="radio" value="full-time" />
                                 <span class="style"></span>
                             </span>
                             &nbsp;Full-time
@@ -160,7 +160,7 @@
 
                     <fieldset>
                         <label for="comments">Comments <span class="optional">(Optional)</span></label>
-                        <textarea rows="8" tabindex="6"></textarea>
+                        <textarea id="comments" rows="8" tabindex="6"></textarea>
                     </fieldset>
 
                     <fieldset>
