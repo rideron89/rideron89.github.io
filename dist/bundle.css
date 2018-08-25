@@ -1,7 +1,7 @@
 header {
   align-items: center;
-  background: #fff;
-  box-shadow: 0px 1px 20px #4c4c4c;
+  background: #d55b3f;
+  color: #fff;
   display: flex;
   font-size: 15px;
   justify-content: space-between;
@@ -14,9 +14,8 @@ header {
   z-index: 2; }
   header .initials {
     align-items: center;
-    color: #606060;
     display: flex;
-    font-family: Boogaloo, Comfortaa, Helvetica, Arial, sans-serif; }
+    font-family: Boogaloo, "M PLUS Rounded 1c", Helvetica, Arial, sans-serif; }
     header .initials a {
       color: inherit;
       margin-left: 15px;
@@ -40,7 +39,7 @@ header {
       display: none; } }
 
 #about {
-  color: #fff;
+  color: #dcdcdc;
   margin: 0;
   padding: 150px 40px 100px;
   text-shadow: 0px 0px 8px #1e1e1e; }
@@ -94,13 +93,13 @@ main #work {
         font-size: 0.9em;
         margin-top: 10px; }
         main #work .work-item .info .links a {
-          border-bottom: 1px solid #f27420;
-          box-shadow: inset 0px 0px 0px #f27420;
+          border-bottom: 1px solid #d55b3f;
+          box-shadow: inset 0px 0px 0px #d55b3f;
           color: inherit;
           text-decoration: none;
           transition: all 0.25s ease; }
           main #work .work-item .info .links a:hover {
-            box-shadow: inset 0px -2px 0px #f27420; }
+            box-shadow: inset 0px -2px 0px #d55b3f; }
       main #work .work-item .info .disclaimer {
         color: #8a8a8a;
         font-size: 0.8em;
@@ -112,11 +111,11 @@ main #work {
         margin-top: 15px;
         padding-top: 15px; }
         main #work .work-item .info .techs span {
-          background: #f27420;
+          background: #d55b3f;
           border-radius: 2px;
           color: #fff;
           display: inline-block;
-          font-family: Boogaloo, Comfortaa, Helvetica, Arial, sans-serif;
+          font-family: Boogaloo, "M PLUS Rounded 1c", Helvetica, Arial, sans-serif;
           font-size: 0.8em;
           padding: 4px 6px; }
           main #work .work-item .info .techs span + span {
@@ -134,7 +133,7 @@ main #work {
 
 footer {
   color: #fff;
-  font-family: Boogaloo, Comfortaa, Helvetica, Arial, sans-serif;
+  font-family: Boogaloo, "M PLUS Rounded 1c", Helvetica, Arial, sans-serif;
   font-size: 0.9em;
   padding: 0 40px 40px;
   text-align: center;
@@ -166,7 +165,7 @@ form {
       opacity: 0.5; }
   form button {
     -webkit-appearance: none;
-    background: #f27420;
+    background: #d55b3f;
     border: 0;
     border-radius: 2px;
     color: #fff;
@@ -189,7 +188,7 @@ form {
     font: inherit;
     letter-spacing: inherit;
     line-height: 1;
-    outline-color: #f27420;
+    outline-color: #d55b3f;
     padding: 12px 16px;
     width: 100%; }
   form .radio-button {
@@ -204,10 +203,10 @@ form {
     form .radio-button input:checked:active + .style:before, form .radio-button input:checked:focus + .style:before {
       border-width: 1px; }
     form .radio-button input:checked:active + .style:after, form .radio-button input:checked:focus + .style:after {
-      background: #f27420; }
+      background: #d55b3f; }
     form .radio-button input:active + .style:before,
     form .radio-button input:focus + .style:before {
-      border-color: #f27420;
+      border-color: #d55b3f;
       border-width: 2px; }
     form .radio-button .style {
       height: 16px;
@@ -245,21 +244,18 @@ form {
 html, body {
   -moz-osx-font-smoothing: grayscale;
   color: #444444;
-  font-family: Comfortaa, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "M PLUS Rounded 1c", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.4;
   margin: 0;
   padding: 0; }
 
 body {
-  background-attachment: fixed;
-  background-image: url("./images/about-background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
+  background-image: url("./images/global-background.png");
+  background-repeat: repeat; }
 
 h1 {
-  font-family: Boogaloo, Comfortaa, Helvetica, Arial, sans-serif;
+  font-family: Boogaloo, "M PLUS Rounded 1c", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 80px;
   letter-spacing: 0.035em;
@@ -271,14 +267,14 @@ h1 {
       font-size: 60px; } }
 
 h2 {
-  font-family: Boogaloo, Comfortaa, Helvetica, Arial, sans-serif;
+  font-family: Boogaloo, "M PLUS Rounded 1c", Helvetica, Arial, sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 1;
   margin: 0 0 35px; }
 
 h4 {
-  font-family: Boogaloo, Comfortaa, Helvetica, Arial, sans-serif;
+  font-family: Boogaloo, "M PLUS Rounded 1c", Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
