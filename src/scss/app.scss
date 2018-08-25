@@ -1,11 +1,11 @@
-$color-primary:      #f27420;
+$color-primary:      #d55b3f;
 $color-primary-dark: #c15a16;
 
-$font-comfortaa: Comfortaa, Helvetica, Arial, sans-serif;
-$font-boogaloo: Boogaloo, $font-comfortaa;
+$font-m-plus-rounded: 'M PLUS Rounded 1c', Helvetica, Arial, sans-serif;
+$font-boogaloo: Boogaloo, $font-m-plus-rounded;
 
 @import "header";
-@import "intro";
+@import "about";
 @import "main";
 @import "work";
 @import "footer";
@@ -18,19 +18,16 @@ $font-boogaloo: Boogaloo, $font-comfortaa;
 html, body {
     -moz-osx-font-smoothing: grayscale;
     color: #444444;
-    font-family: $font-comfortaa;
-    font-size: 16px;
-    line-height: 1.5;
+    font-family: $font-m-plus-rounded;
+    font-size: 17px;
+    line-height: 1.4;
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-attachment: fixed;
-    background-image: url("./images/about-background.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: url("./images/global-background.png");
+    background-repeat: repeat;
 }
 
 h1 {
